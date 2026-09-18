@@ -2,17 +2,19 @@ import { motion } from 'framer-motion';
 import { Database, Server, Smartphone, Globe, Shield, MessageSquare, Image, Bell, Layers } from 'lucide-react';
 
 const archLayers = [
-  { id: 'client', name: 'CLIENT', tech: 'React / React Native', icon: Smartphone, color: 'text-cyan-400', border: 'border-cyan-500/30', bg: 'bg-cyan-500/10' },
-  { id: 'api', name: 'API LAYER', tech: 'REST APIs', icon: Globe, color: 'text-white', border: 'border-gray-600', bg: 'bg-gray-800/50' },
-  { id: 'auth', name: 'AUTHENTICATION', tech: 'Firebase / JWT', icon: Shield, color: 'text-yellow-400', border: 'border-yellow-500/30', bg: 'bg-yellow-500/10' },
-  { id: 'backend', name: 'BACKEND', tech: 'Node.js + Express', icon: Server, color: 'text-green-400', border: 'border-green-500/30', bg: 'bg-green-500/10' },
-  { id: 'database', name: 'DATABASE', tech: 'MongoDB', icon: Database, color: 'text-green-500', border: 'border-green-600/30', bg: 'bg-green-600/10' },
+  { id: 'client', name: 'CLIENT RUNTIME', tech: 'React 19 / React Native (iOS & Android) / Vite', icon: Smartphone, color: 'text-cyan-400', border: 'border-cyan-500/30', bg: 'bg-cyan-500/10' },
+  { id: 'security', name: 'SECURITY & INTEGRITY', tech: 'HMAC SHA-256 Signing / Firebase Auth / JWT Tokens / OTP', icon: Shield, color: 'text-yellow-400', border: 'border-yellow-500/30', bg: 'bg-yellow-500/10' },
+  { id: 'backend', name: 'CORE BACKEND & GATEWAY', tech: 'Node.js 22 + Express 5 + REST Endpoints', icon: Server, color: 'text-green-400', border: 'border-green-500/30', bg: 'bg-green-500/10' },
+  { id: 'realtime', name: 'REAL-TIME & STREAMING', tech: 'Socket.IO Telemetry / Foreground Audio / react-native-fs', icon: Globe, color: 'text-purple-400', border: 'border-purple-500/30', bg: 'bg-purple-500/10' },
+  { id: 'database', name: 'PERSISTENCE LAYER', tech: 'MongoDB Atlas / Mongoose 9 / Local Flash Cache', icon: Database, color: 'text-emerald-400', border: 'border-emerald-600/30', bg: 'bg-emerald-600/10' },
 ];
 
 const sideServices = [
-  { id: 'realtime', name: 'REAL-TIME ENGINE', tech: 'Socket.IO', icon: MessageSquare, color: 'text-purple-400' },
-  { id: 'media', name: 'MEDIA STORAGE', tech: 'Cloudinary', icon: Image, color: 'text-blue-400' },
-  { id: 'push', name: 'NOTIFICATIONS', tech: 'FCM', icon: Bell, color: 'text-orange-400' },
+  { id: 'ai-diff', name: 'AI DIFFUSION ENGINE', tech: 'Pixazo Flux Schnell & DeAPI', icon: MessageSquare, color: 'text-cyan-400' },
+  { id: 'ats-parse', name: 'ATS PARSER & NLP', tech: 'pdf-parse & Textract Matching', icon: Layers, color: 'text-indigo-400' },
+  { id: 'media', name: 'MULTI-ACCOUNT CDN', tech: 'Cloudinary Automated Failover', icon: Image, color: 'text-blue-400' },
+  { id: 'cron', name: 'ASYNC CRON WORKERS', tech: '60s Telemetry & CDN Sync Queues', icon: Server, color: 'text-amber-400' },
+  { id: 'push-ads', name: 'NOTIFICATIONS & ADS', tech: 'FCM Push Alerts & Google AdMob', icon: Bell, color: 'text-orange-400' },
 ];
 
 export const Architecture = () => {
@@ -51,6 +53,7 @@ export const Architecture = () => {
                 cy="50"
                 r="4" 
                 fill="#0ff"
+                initial={{ cy: 50 }}
                 animate={{ cy: [50, 600] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
               />
@@ -59,6 +62,7 @@ export const Architecture = () => {
                 cy="50"
                 r="4" 
                 fill="#0ff"
+                initial={{ cy: 50 }}
                 animate={{ cy: [50, 600] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "linear", delay: 1 }}
               />

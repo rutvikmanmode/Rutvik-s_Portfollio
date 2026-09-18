@@ -1,0 +1,420 @@
+- generic [ref=f2e5]:
+  - navigation [ref=f2e6]:
+    - generic [ref=f2e7]:
+      - generic [ref=f2e8] [cursor=pointer]: RUTVIK.DEV RUTVIK.DEV RUTVIK.DEV
+      - generic [ref=f2e9]:
+        - button "HOME" [ref=f2e10]
+        - button "ABOUT" [ref=f2e12]
+        - button "EXPERIENCE" [ref=f2e13]
+        - button "PROJECTS" [ref=f2e14]
+        - button "STACK" [ref=f2e15]
+        - button "CONTACT" [ref=f2e16]
+  - main [ref=f2e17]:
+    - generic [ref=f2e18]:
+      - generic [ref=f2e20]:
+        - generic [ref=f2e21]:
+          - generic [ref=f2e22]: SYS.INIT // FULL-STACK DEVELOPER
+          - heading "I BUILD SYSTEMS THAT FEEL ALIVE." [level=1] [ref=f2e24]
+          - generic [ref=f2e25]:
+            - generic [ref=f2e26]: REACT
+            - generic [ref=f2e27]: NODE
+            - generic [ref=f2e28]: AI
+            - generic [ref=f2e29]: REAL-TIME
+          - paragraph [ref=f2e30]: Computer Science Engineer focused on building scalable web and mobile applications, real-time systems, and AI-powered products.
+          - generic [ref=f2e31]:
+            - button "[ EXPLORE MY WORK ]" [ref=f2e32]
+            - button "[ CONNECT ]" [ref=f2e34]
+            - generic [ref=f2e35]:
+              - link [ref=f2e36] [cursor=pointer]:
+                - /url: https://github.com/rutvikmanmode
+              - link [ref=f2e41] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/rutvik-manmode-740942251/
+        - generic [ref=f2e69]:
+          - generic [ref=f2e70]:
+            - generic [ref=f2e71]:
+              - generic [ref=f2e76]: NEXUS_AI
+              - generic [ref=f2e77]: // v2.0
+            - generic [ref=f2e78]:
+              - button "Reset conversation" [ref=f2e79]
+              - generic [ref=f2e86] [cursor=pointer]
+          - generic [ref=f2e87]:
+            - generic [ref=f2e88]: "> Neural link established. Welcome to Rutvik's digital domain. I'm NEXUS — his AI interface. I can brief you on projects, skills, experience, or help you connect. // What intel are you looking for?"
+            - generic [ref=f2e90]: Who is Rutvik?
+            - generic [ref=f2e92]: "// NEURAL LINK ESTABLISHED :: ACCESSING RUTVIK'S DATABANKS > TARGET ACQUIRED: Rutvik Sanjay Manmode > STATUS: Full-Stack Developer & Computer Science Engineer (VIT Bhopal, Class of '26) [INFO] Rutvik specializes in building scalable web and mobile applications, real-time systems, and AI-powered products. > To inspect his battle-tested builds, scroll down to the **SYSTEM DEPLOYMENTS** section. How can I assist your query further?"
+          - generic [ref=f2e94]:
+            - generic [ref=f2e95]: ">"
+            - textbox "Ask NEXUS anything..." [ref=f2e96]
+            - button [disabled] [ref=f2e97]
+      - generic [ref=f2e101] [cursor=pointer]: SCROLL
+    - generic [ref=f2e106]:
+      - heading "SYSTEM PROFILE" [level=2] [ref=f2e108]
+      - generic [ref=f2e112]:
+        - generic [ref=f2e113]:
+          - generic [ref=f2e114]: profile.exe
+          - generic [ref=f2e119]:
+            - generic [ref=f2e120]:
+              - generic [ref=f2e121]:
+                - generic [ref=f2e122]: "NAME:"
+                - generic [ref=f2e123]: Rutvik Sanjay Manmode
+              - generic [ref=f2e124]:
+                - generic [ref=f2e125]: "ROLE:"
+                - generic [ref=f2e126]: Full-Stack Developer
+              - generic [ref=f2e127]:
+                - generic [ref=f2e128]: "CURRENT STATUS:"
+                - generic [ref=f2e129]: BUILDING / LEARNING / SHIPPING
+            - generic [ref=f2e130]: "SPECIALIZATION:"
+            - list [ref=f2e131]:
+              - listitem [ref=f2e132]:
+                - generic [ref=f2e133]: ">"
+                - generic [ref=f2e134]: Web Applications
+              - listitem [ref=f2e135]:
+                - generic [ref=f2e136]: ">"
+                - generic [ref=f2e137]: Mobile Applications
+              - listitem [ref=f2e138]:
+                - generic [ref=f2e139]: ">"
+                - generic [ref=f2e140]: Real-Time Systems
+              - listitem [ref=f2e141]:
+                - generic [ref=f2e142]: ">"
+                - generic [ref=f2e143]: AI-Powered Applications
+        - generic [ref=f2e146]:
+          - generic [ref=f2e147]:
+            - heading "SYSTEM ALLOCATION" [level=3] [ref=f2e148]
+            - generic [ref=f2e152]:
+              - generic [ref=f2e154]:
+                - generic [ref=f2e155]: FULL STACK
+                - generic [ref=f2e156]: 92%
+              - generic [ref=f2e160]:
+                - generic [ref=f2e161]: REAL-TIME
+                - generic [ref=f2e162]: 85%
+              - generic [ref=f2e166]:
+                - generic [ref=f2e167]: MOBILE
+                - generic [ref=f2e168]: 88%
+              - generic [ref=f2e171]:
+                - generic [ref=f2e172]: AI SYSTEMS
+                - generic [ref=f2e173]: 75%
+          - generic [ref=f2e179]:
+            - generic [ref=f2e180]: SECURITY CLEARANCE
+            - generic [ref=f2e181]: Level 4 Authorization Granted. System functioning within normal parameters.
+    - generic [ref=f2e183]:
+      - heading "TIMELINE" [level=2] [ref=f2e185]
+      - generic [ref=f2e192]:
+        - generic [ref=f2e195]:
+          - generic [ref=f2e196]: "01"
+          - generic [ref=f2e198]: Mar 2026 – May 2026
+          - heading "ND Softech Solutions" [level=3] [ref=f2e199]
+          - generic [ref=f2e200]: SDE Intern
+          - list [ref=f2e201]:
+            - listitem [ref=f2e202]:
+              - generic [ref=f2e203]: <
+              - generic [ref=f2e204]: Developed a full-stack social media application
+            - listitem [ref=f2e205]:
+              - generic [ref=f2e206]: <
+              - generic [ref=f2e207]: Implemented authentication and built real-time chat
+            - listitem [ref=f2e208]:
+              - generic [ref=f2e209]: <
+              - generic [ref=f2e210]: Implemented reels and added push notifications
+            - listitem [ref=f2e211]:
+              - generic [ref=f2e212]: <
+              - generic [ref=f2e213]: Built responsive UI and integrated REST APIs
+            - listitem [ref=f2e214]:
+              - generic [ref=f2e215]: <
+              - generic [ref=f2e216]: Implemented JWT authentication and Firebase notifications
+          - generic [ref=f2e217]:
+            - generic [ref=f2e218]: React Native
+            - generic [ref=f2e219]: Node.js
+            - generic [ref=f2e220]: MongoDB
+            - generic [ref=f2e221]: REST APIs
+            - generic [ref=f2e222]: Firebase
+            - generic [ref=f2e223]: Socket.IO
+            - generic [ref=f2e224]: Cloudinary
+        - generic [ref=f2e229]:
+          - generic [ref=f2e230]: "02"
+          - generic [ref=f2e232]: Nov 2024 – Jan 2025
+          - heading "Hum Aspen Wellness Pvt Ltd" [level=3] [ref=f2e233]
+          - generic [ref=f2e234]: Full Stack Development Intern
+          - list [ref=f2e235]:
+            - listitem [ref=f2e236]:
+              - generic [ref=f2e237]: ">"
+              - generic [ref=f2e238]: Developed and optimized web-based solutions
+            - listitem [ref=f2e239]:
+              - generic [ref=f2e240]: ">"
+              - generic [ref=f2e241]: Contributed to front-end and back-end improvements
+            - listitem [ref=f2e242]:
+              - generic [ref=f2e243]: ">"
+              - generic [ref=f2e244]: Worked on debugging and deployment activities
+            - listitem [ref=f2e245]:
+              - generic [ref=f2e246]: ">"
+              - generic [ref=f2e247]: Improved functionality of digital wellness platforms
+            - listitem [ref=f2e248]:
+              - generic [ref=f2e249]: ">"
+              - generic [ref=f2e250]: Integrated health AI platforms
+          - generic [ref=f2e251]:
+            - generic [ref=f2e252]: Frontend
+            - generic [ref=f2e253]: Backend
+            - generic [ref=f2e254]: Debugging
+            - generic [ref=f2e255]: Deployment
+            - generic [ref=f2e256]: AI Platform Integration
+    - generic [ref=f2e260]:
+      - generic [ref=f2e261]:
+        - generic [ref=f2e262]:
+          - heading "SYSTEM DEPLOYMENTS" [level=2] [ref=f2e263]
+          - generic [ref=f2e266]: PRODUCTION READY ARCHITECTURES
+        - generic [ref=f2e267]:
+          - generic [ref=f2e268]: "TOTAL ENTITIES: 02"
+          - generic [ref=f2e269]: "STATUS: OPERATIONAL"
+      - generic [ref=f2e270]:
+        - generic [ref=f2e271]:
+          - generic [ref=f2e273]:
+            - generic [ref=f2e274]: AI_MATCH_ENGINE_v1.0
+            - generic [ref=f2e284]:
+              - generic [ref=f2e285]:
+                - generic [ref=f2e288]: RESUME INPUT
+                - generic [ref=f2e291]: DOCUMENT PARSER
+                - generic [ref=f2e294]: SKILL EXTRACTION
+                - generic [ref=f2e297]: MATCH ENGINE
+              - generic [ref=f2e300]:
+                - generic [ref=f2e301]:
+                  - generic [ref=f2e302]: COMPATIBILITY SCORE
+                  - generic [ref=f2e303]: 94.7%
+                - generic [ref=f2e304]:
+                  - generic [ref=f2e306]:
+                    - generic [ref=f2e307]: JavaScript
+                    - generic [ref=f2e308]: 98%
+                  - generic [ref=f2e311]:
+                    - generic [ref=f2e312]: React
+                    - generic [ref=f2e313]: 94%
+                  - generic [ref=f2e316]:
+                    - generic [ref=f2e317]: Node.js
+                    - generic [ref=f2e318]: 91%
+                  - generic [ref=f2e321]:
+                    - generic [ref=f2e322]: MongoDB
+                    - generic [ref=f2e323]: 87%
+                - generic [ref=f2e325]: "RECRUITER DECISION: APPROVE"
+          - generic [ref=f2e330]:
+            - generic [ref=f2e331]: 01 // AI RECRUITMENT SYSTEM
+            - heading "JOBIFY" [level=3] [ref=f2e332]
+            - paragraph [ref=f2e333]: An AI-powered hiring and recruitment platform connecting students and recruiters through intelligent resume parsing and skill-based job matching.
+            - generic [ref=f2e334]:
+              - generic [ref=f2e335]: "CORE FUNCTIONALITY:"
+              - list [ref=f2e336]:
+                - listitem [ref=f2e337]:
+                  - generic [ref=f2e338]: ▹
+                  - text: AI-powered recruitment & Resume parsing
+                - listitem [ref=f2e339]:
+                  - generic [ref=f2e340]: ▹
+                  - text: Skill extraction & Job matching
+                - listitem [ref=f2e341]:
+                  - generic [ref=f2e342]: ▹
+                  - text: Match score calculation & Job posting
+                - listitem [ref=f2e343]:
+                  - generic [ref=f2e344]: ▹
+                  - text: Application tracking & Hiring analytics
+                - listitem [ref=f2e345]:
+                  - generic [ref=f2e346]: ▹
+                  - text: Real-time scoring logic
+            - generic [ref=f2e347]:
+              - generic [ref=f2e348]: React.js
+              - generic [ref=f2e349]: Tailwind CSS
+              - generic [ref=f2e350]: Node.js
+              - generic [ref=f2e351]: Express.js
+              - generic [ref=f2e352]: MongoDB
+              - generic [ref=f2e353]: JWT
+              - generic [ref=f2e354]: Multer
+              - generic [ref=f2e355]: pdf-parse
+            - link "GITHUB" [ref=f2e357] [cursor=pointer]:
+              - /url: https://github.com/rutvikmanmode
+        - generic [ref=f2e362]:
+          - generic [ref=f2e364]:
+            - generic [ref=f2e365]:
+              - generic [ref=f2e377]:
+                - generic [ref=f2e378]: NEON NETWORK
+                - generic [ref=f2e379]: ONLINE
+              - generic [ref=f2e381]:
+                - generic [ref=f2e382]: System initialized...
+                - generic [ref=f2e383]: Socket connection established.
+                - generic [ref=f2e384]: Socket connection established.
+                - generic [ref=f2e385]:
+                  - text: Hey, are you online?
+                  - generic [ref=f2e386]: 10:00:02
+                - generic [ref=f2e387]:
+                  - text: Hey, are you online?
+                  - generic [ref=f2e388]: 10:00:02
+                - generic [ref=f2e389]:
+                  - text: Yeah! Just testing the new real-time architecture.
+                  - generic [ref=f2e390]: 10:00:04
+                - generic [ref=f2e391]:
+                  - text: Yeah! Just testing the new real-time architecture.
+                  - generic [ref=f2e392]: 10:00:04
+                - generic [ref=f2e393]: "Event: MESSAGE_DELIVERED"
+                - generic [ref=f2e394]: "Event: MESSAGE_DELIVERED"
+              - generic [ref=f2e395]:
+                - generic [ref=f2e396]: +
+                - generic [ref=f2e397]: Message...
+            - generic [ref=f2e398]:
+              - generic [ref=f2e399]: Socket.IO Server
+              - generic [ref=f2e401]: Conversation Room
+            - generic [ref=f2e402]:
+              - generic [ref=f2e403]: FCM Push
+              - generic [ref=f2e405]: Cloudinary Media
+          - generic [ref=f2e407]:
+            - generic [ref=f2e408]: 02 // REAL-TIME SOCIAL PLATFORM
+            - heading "SOCIAL APP" [level=3] [ref=f2e409]
+            - paragraph [ref=f2e410]: A full-stack social media mobile application with real-time messaging, reels playback, and push notifications.
+            - generic [ref=f2e411]:
+              - generic [ref=f2e412]: "CORE FUNCTIONALITY:"
+              - list [ref=f2e413]:
+                - listitem [ref=f2e414]:
+                  - generic [ref=f2e415]: ▹
+                  - text: Authentication & User profiles
+                - listitem [ref=f2e416]:
+                  - generic [ref=f2e417]: ▹
+                  - text: Posts, Reels, Search, Friends
+                - listitem [ref=f2e418]:
+                  - generic [ref=f2e419]: ▹
+                  - text: Real-time messaging & Conversation rooms
+                - listitem [ref=f2e420]:
+                  - generic [ref=f2e421]: ▹
+                  - text: Typing indicators & Read/delivery status
+                - listitem [ref=f2e422]:
+                  - generic [ref=f2e423]: ▹
+                  - text: FCM push notifications & Cloudinary media
+            - generic [ref=f2e424]:
+              - generic [ref=f2e425]: React Native
+              - generic [ref=f2e426]: Node.js
+              - generic [ref=f2e427]: Express.js
+              - generic [ref=f2e428]: MongoDB
+              - generic [ref=f2e429]: Socket.IO
+              - generic [ref=f2e430]: Firebase
+              - generic [ref=f2e431]: Zustand
+              - generic [ref=f2e432]: React Query
+              - generic [ref=f2e433]: Cloudinary
+            - link "GITHUB" [ref=f2e435] [cursor=pointer]:
+              - /url: https://github.com/rutvikmanmode
+    - generic [ref=f2e441]:
+      - heading "TECH CONSTELLATION" [level=2] [ref=f2e443]
+      - generic [ref=f2e450]:
+        - generic: React.js
+        - generic: React Native
+        - generic: TypeScript
+        - generic: JavaScript
+        - generic: Node.js
+        - generic: Express.js
+        - generic: REST APIs
+        - generic: MongoDB
+        - generic: MySQL
+        - generic: AWS
+        - generic: Firebase
+        - generic: Cloudinary
+        - generic: GitHub
+        - generic: Postman
+        - generic: Jest
+        - generic: Socket.IO
+    - generic [ref=f2e453]:
+      - heading "SYSTEM ARCHITECTURE" [level=2] [ref=f2e455]
+      - generic [ref=f2e462]:
+        - generic [ref=f2e463]:
+          - generic [ref=f2e464]: CORE STACK
+          - generic [ref=f2e465]:
+            - generic [ref=f2e470]:
+              - generic [ref=f2e471]: CLIENT
+              - generic [ref=f2e472]: React / React Native
+            - generic [ref=f2e474]: ↓
+          - generic [ref=f2e475]:
+            - generic [ref=f2e481]:
+              - generic [ref=f2e482]: API LAYER
+              - generic [ref=f2e483]: REST APIs
+            - generic [ref=f2e485]: ↓
+          - generic [ref=f2e486]:
+            - generic [ref=f2e491]:
+              - generic [ref=f2e492]: AUTHENTICATION
+              - generic [ref=f2e493]: Firebase / JWT
+            - generic [ref=f2e495]: ↓
+          - generic [ref=f2e496]:
+            - generic [ref=f2e502]:
+              - generic [ref=f2e503]: BACKEND
+              - generic [ref=f2e504]: Node.js + Express
+            - generic [ref=f2e506]: ↓
+          - generic [ref=f2e514]:
+            - generic [ref=f2e515]: DATABASE
+            - generic [ref=f2e516]: MongoDB
+        - generic [ref=f2e518]:
+          - generic [ref=f2e519]: MICROSERVICES & APIs
+          - generic [ref=f2e520]:
+            - generic [ref=f2e521]:
+              - generic [ref=f2e523]: REAL-TIME ENGINE
+              - generic [ref=f2e527]: Socket.IO
+            - generic [ref=f2e528]:
+              - generic [ref=f2e530]: MEDIA STORAGE
+              - generic [ref=f2e536]: Cloudinary
+            - generic [ref=f2e537]:
+              - generic [ref=f2e539]: NOTIFICATIONS
+              - generic [ref=f2e544]: FCM
+    - generic [ref=f2e546]:
+      - heading "EDUCATION" [level=2] [ref=f2e548]
+      - generic [ref=f2e553]:
+        - generic [ref=f2e554]:
+          - generic [ref=f2e557]: 2022–2026
+          - heading "B.Tech Computer Science & Engineering" [level=3] [ref=f2e558]
+          - generic [ref=f2e559]: VIT Bhopal University
+          - generic [ref=f2e560]: "CGPA: 7.85"
+        - generic [ref=f2e562]:
+          - generic [ref=f2e565]: Completed
+          - heading "Class 12 – HSC" [level=3] [ref=f2e566]
+          - generic [ref=f2e567]: Sri Chaitanya Junior College, Pune
+          - generic [ref=f2e568]: 82.3%
+    - generic [ref=f2e571]:
+      - generic [ref=f2e572]:
+        - heading "CERTIFICATIONS" [level=2] [ref=f2e574]
+        - generic [ref=f2e579]: "VALIDATED MODULES: 4"
+      - generic [ref=f2e580]:
+        - generic [ref=f2e581]:
+          - generic [ref=f2e592]: NPTEL
+          - heading "Cloud Computing" [level=3] [ref=f2e593]
+        - generic [ref=f2e599]:
+          - generic [ref=f2e610]: NPTEL
+          - heading "Marketing Analytics" [level=3] [ref=f2e611]
+        - generic [ref=f2e617]:
+          - generic [ref=f2e628]: Euthnus
+          - heading "MERN Full Stack Developer" [level=3] [ref=f2e629]
+        - generic [ref=f2e635]:
+          - generic [ref=f2e646]: IBM
+          - heading "Cyber Security Analyst" [level=3] [ref=f2e647]
+    - generic [ref=f2e654]:
+      - generic [ref=f2e655]:
+        - generic [ref=f2e657]:
+          - heading "READY TO BUILD? BUILD? BUILD?" [level=2] [ref=f2e658]:
+            - text: READY TO
+            - generic [ref=f2e659]: BUILD? BUILD? BUILD?
+          - paragraph [ref=f2e660]: Have an idea, product, or system that needs to be built? Establish a neural link and let's create something extraordinary.
+          - generic [ref=f2e661]:
+            - link "PRIMARY COMM LINK rutvikmanmode127@gmail.com" [ref=f2e662] [cursor=pointer]:
+              - /url: mailto:rutvikmanmode127@gmail.com
+              - generic [ref=f2e667]:
+                - generic [ref=f2e668]: PRIMARY COMM LINK
+                - generic [ref=f2e669]: rutvikmanmode127@gmail.com
+            - generic [ref=f2e670]:
+              - link "GITHUB" [ref=f2e671] [cursor=pointer]:
+                - /url: https://github.com/rutvikmanmode
+              - link "LINKEDIN" [ref=f2e677] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/rutvik-manmode-740942251/
+        - generic [ref=f2e683]:
+          - generic [ref=f2e684]: connection.request()
+          - generic [ref=f2e694]:
+            - generic [ref=f2e695]:
+              - generic [ref=f2e696]: const name =
+              - textbox "const name =" [ref=f2e697]:
+                - /placeholder: "'Enter your name';"
+            - generic [ref=f2e698]:
+              - generic [ref=f2e699]: const email =
+              - textbox "const email =" [ref=f2e700]:
+                - /placeholder: "'Enter your email';"
+            - generic [ref=f2e701]:
+              - generic [ref=f2e702]: const message =
+              - textbox "const message =" [ref=f2e703]:
+                - /placeholder: "`Enter your project details...`;"
+            - button "[ SEND REQUEST ]" [ref=f2e704]
+      - generic [ref=f2e707]:
+        - generic [ref=f2e708]: © 2026 RUTVIK SANJAY MANMODE. ALL RIGHTS RESERVED.
+        - generic [ref=f2e709]:
+          - generic [ref=f2e710]: "SYSTEM_VERSION: 2.0.4"
+          - generic [ref=f2e711]: "STATUS: ONLINE"

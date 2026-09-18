@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Code2, Briefcase, ChevronDown } from 'lucide-react';
 import { personalInfo } from '../data/personalData';
-import { Mascot } from './Mascot';
+import { AIMascotChat } from './AIMascotChat';
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -95,9 +95,9 @@ export const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Right side Mascot */}
-          <div className="flex-1 w-full flex justify-center items-center h-[400px] md:h-[600px] mt-10 md:mt-0 relative z-20">
-            <Mascot />
+          {/* Right side AI Mascot Chat */}
+          <div className="flex-1 w-full flex justify-center items-start mt-10 md:mt-0 relative z-20">
+            <AIMascotChat />
           </div>
           
         </div>

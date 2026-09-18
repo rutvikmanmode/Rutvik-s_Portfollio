@@ -5,39 +5,71 @@ import { Network } from 'lucide-react';
 
 // Pre-calculated node positions for a pseudo-random constellation look
 const nodePositions: Record<string, {x: number, y: number}> = {
-  "React.js": { x: 30, y: 20 },
-  "React Native": { x: 45, y: 15 },
-  "TypeScript": { x: 20, y: 40 },
-  "JavaScript": { x: 35, y: 35 },
+  // Frontend
+  "React.js": { x: 28, y: 22 },
+  "React Native": { x: 42, y: 16 },
+  "TypeScript": { x: 18, y: 38 },
+  "JavaScript": { x: 34, y: 34 },
+  "Tailwind CSS": { x: 14, y: 24 },
+  "HTML5 Canvas": { x: 24, y: 12 },
   
-  "Node.js": { x: 70, y: 25 },
-  "Express.js": { x: 85, y: 20 },
-  "REST APIs": { x: 75, y: 40 },
+  // Backend
+  "Node.js": { x: 72, y: 22 },
+  "Express.js": { x: 86, y: 18 },
+  "REST APIs": { x: 76, y: 36 },
+  "Passport.js": { x: 88, y: 32 },
+  "Cron Workers": { x: 68, y: 12 },
   
-  "MongoDB": { x: 60, y: 65 },
-  "MySQL": { x: 75, y: 70 },
+  // Database
+  "MongoDB": { x: 58, y: 68 },
+  "MongoDB Atlas": { x: 72, y: 62 },
+  "MySQL": { x: 82, y: 72 },
   
-  "AWS": { x: 40, y: 75 },
-  "Firebase": { x: 25, y: 80 },
-  "Cloudinary": { x: 20, y: 60 },
+  // Cloud & DevOps
+  "AWS": { x: 38, y: 78 },
+  "Firebase": { x: 24, y: 78 },
+  "Cloudinary": { x: 16, y: 62 },
+  "Vercel": { x: 30, y: 88 },
+  "Render": { x: 46, y: 88 },
   
-  "GitHub": { x: 10, y: 25 },
-  "Postman": { x: 90, y: 50 },
-  "Jest": { x: 85, y: 85 },
+  // Real-time & Telemetry
+  "Socket.IO": { x: 50, y: 48 },
+  "WebSockets": { x: 62, y: 42 },
+  "FCM Push": { x: 36, y: 52 },
+  "react-native-fs": { x: 48, y: 62 },
   
-  "Socket.IO": { x: 50, y: 50 },
+  // AI & Media
+  "Flux Schnell": { x: 54, y: 18 },
+  "Pixazo AI": { x: 62, y: 28 },
+  "DeAPI": { x: 46, y: 32 },
+  "pdf-parse / ATS": { x: 38, y: 40 },
+  "Gemini AI": { x: 56, y: 34 },
+  
+  // Security
+  "HMAC SHA-256": { x: 84, y: 52 },
+  "JWT": { x: 72, y: 50 },
+  "OTP Verification": { x: 88, y: 64 },
+  "Bcrypt": { x: 66, y: 78 },
 };
 
 export const TechConstellation = () => {
   const [activeNode, setActiveNode] = useState<string | null>(null);
 
   // Flatten the tech data to easily map over it
-  const nodes = Object.entries(techCategories).flatMap(([category, techs]) => 
-    techs.map(tech => ({
-      name: tech,
-      category,
-      ...nodePositions[tech]
-    }))
+  const nodes = Object.entries(techCategories).flatMap(([category, techs], catIdx) => 
+    techs.map((tech, techIdx) => {
+      const defaultPos = {
+        x: ((catIdx * 14 + techIdx * 11) % 80) + 10,
+        y: ((catIdx * 12 + techIdx * 16) % 75) + 12
+      };
+      const pos = nodePositions[tech] || defaultPos;
+      return {
+        name: tech,
+        category,
+        x: pos.x,
+        y: pos.y,
+      };
+    })
   );
 
   return (
