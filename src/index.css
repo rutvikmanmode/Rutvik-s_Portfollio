@@ -8,6 +8,10 @@
   --color-neon-cyan: #0ff;
   --color-neon-purple: #b026ff;
   --color-neon-magenta: #ff00ff;
+  --color-magenta-300: #ff80ff;
+  --color-magenta-400: #ff40ff;
+  --color-magenta-500: #ff00ff;
+  --color-magenta-600: #d900d9;
   --color-bg-dark: #050508;
   --color-bg-darker: #020204;
   --color-panel: rgba(10, 10, 15, 0.7);

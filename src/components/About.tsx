@@ -121,7 +121,7 @@ export const About = () => {
                 <div>
                   <div className="flex justify-between font-mono text-xs mb-2">
                     <span className="text-gray-400">MOBILE</span>
-                    <span className="text-magenta-500">88%</span>
+                    <span className="text-magenta-400">88%</span>
                   </div>
                   <div className="h-1.5 w-full bg-gray-900 overflow-hidden">
                     <motion.div 
