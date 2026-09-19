@@ -26,7 +26,7 @@ const INITIAL_MESSAGE: DisplayMessage = {
 
 export const AIMascotChat = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const chatEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [messages, setMessages] = useState<DisplayMessage[]>([INITIAL_MESSAGE]);
@@ -53,10 +53,24 @@ export const AIMascotChat = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  // Auto-scroll to bottom
+  // Auto-scroll to bottom inside the chat box only (prevents whole-page scrolling)
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
   }, [messages]);
+
+  // Ensure scroll position is at the bottom when opening the chat box
+  useEffect(() => {
+    if (isChatOpen) {
+      const timer = setTimeout(() => {
+        if (messagesContainerRef.current) {
+          messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+        }
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [isChatOpen]);
 
   // Cleanup typing interval
   useEffect(() => {
@@ -168,7 +182,7 @@ export const AIMascotChat = () => {
         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
         onClick={() => {
           setIsChatOpen(!isChatOpen);
-          setTimeout(() => inputRef.current?.focus(), 300);
+          setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 300);
         }}
       >
         {/* Holographic background glow */}
@@ -321,7 +335,10 @@ export const AIMascotChat = () => {
               </div>
 
               {/* Messages Area */}
-              <div className="ai-chat-messages h-[260px] overflow-y-auto p-4 flex flex-col gap-3">
+              <div
+                ref={messagesContainerRef}
+                className="ai-chat-messages h-[260px] overflow-y-auto p-4 flex flex-col gap-3"
+              >
                 {messages.map((msg) => (
                   <motion.div
                     key={msg.id}
@@ -357,7 +374,6 @@ export const AIMascotChat = () => {
                     </div>
                   </motion.div>
                 ))}
-                <div ref={chatEndRef} />
               </div>
 
               {/* Suggestion Chips */}

@@ -169,6 +169,10 @@
 }
 
 /* Chat messages scrollbar */
+.ai-chat-messages {
+  overscroll-behavior: contain;
+}
+
 .ai-chat-messages::-webkit-scrollbar {
   width: 4px;
 }
