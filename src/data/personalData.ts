@@ -39,6 +39,7 @@ export const personalInfo = {
   name: "Rutvik Sanjay Manmode",
   role: "Full-Stack Developer",
   email: "rutvikmanmode127@gmail.com",
+  phone: "+91-8605735695",
   github: "https://github.com/rutvikmanmode",
   linkedin: "https://www.linkedin.com/in/rutvik-manmode-740942251/",
   specializations: [
@@ -53,32 +54,37 @@ export const personalInfo = {
 
 export const experiences: Experience[] = [
   {
-    id: "nd-softech",
-    company: "ND Softech Solutions",
+    id: "verzat-rd",
+    company: "Verzat R&D PVT Ltd",
     role: "SDE Intern",
-    period: "Mar 2026 – May 2026",
+    period: "July 2026 – Present",
     description: [
-      "Developed a full-stack social media application",
-      "Implemented authentication and built real-time chat",
-      "Implemented reels and added push notifications",
-      "Built responsive UI and integrated REST APIs",
-      "Implemented JWT authentication and Firebase notifications"
+      "Developed a full-stack CRM web application using Spring Boot and React, implementing Role-Based Access Control (RBAC), optimizing APIs, improving performance, and enhancing overall system reliability.",
+      "Developed and implemented chat ecosystem across web (React) and android (Kotlin) while improving scalability and security of backend."
     ],
-    skills: ["React Native", "Node.js", "MongoDB", "REST APIs", "Firebase", "Socket.IO", "Cloudinary"]
+    skills: ["Spring Boot", "React", "Kotlin", "Android", "Java", "RBAC", "Chat Ecosystem", "REST APIs", "Backend Security"]
+  },
+  {
+    id: "nd-softech",
+    company: "ND Softech Solutions LLP",
+    role: "SDE L1",
+    period: "Mar 2026 – Jun 2026",
+    description: [
+      "Developed a full-stack social media application using React Native, Node.js, and MongoDB with features including authentication, real-time chat, reels, push notifications, and responsive UI design.",
+      "Integrated REST APIs, JWT authentication, Firebase notifications, Cloudinary media storage, and Socket.IO to build secure, scalable, and real-time mobile application functionalities."
+    ],
+    skills: ["React Native", "Node.js", "MongoDB", "Express.js", "Socket.IO", "Firebase Auth & FCM", "Cloudinary", "JWT", "REST APIs"]
   },
   {
     id: "hum-aspen",
     company: "Hum Aspen Wellness Pvt Ltd",
-    role: "Full Stack Development Intern",
+    role: "Full Stack Development Internship",
     period: "Nov 2024 – Jan 2025",
     description: [
-      "Developed and optimized web-based solutions",
-      "Contributed to front-end and back-end improvements",
-      "Worked on debugging and deployment activities",
-      "Improved functionality of digital wellness platforms",
-      "Integrated health AI platforms"
+      "Developed and optimized web-based solutions as a Full Stack Development Intern, contributing to front-end and back-end improvements, debugging, and deployment activities to enhance functionality of digital wellness platforms.",
+      "Collaborated with cross-functional teams to integrate health AI platforms, improving user experience and ensuring smooth operation of web applications."
     ],
-    skills: ["Frontend", "Backend", "Debugging", "Deployment", "AI Platform Integration"]
+    skills: ["React.js", "Node.js", "Express.js", "REST APIs", "Health AI Integration", "Debugging", "Web Optimization", "Cloud Deployment"]
   }
 ];
 
@@ -234,8 +240,8 @@ export const projects: Project[] = [
 ];
 
 export const techCategories = {
-  "Frontend": ["React.js", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5 Canvas"],
-  "Backend": ["Node.js", "Express.js", "REST APIs", "Passport.js", "Cron Workers"],
+  "Frontend & Mobile": ["React.js", "React Native", "Kotlin", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5 Canvas"],
+  "Backend": ["Spring Boot", "Java", "Node.js", "Express.js", "REST APIs", "Passport.js", "Cron Workers"],
   "Database": ["MongoDB", "MongoDB Atlas", "MySQL"],
   "Cloud & DevOps": ["Firebase", "Cloudinary", "AWS", "Vercel", "Render"],
   "Real-time & Telemetry": ["Socket.IO", "WebSockets", "FCM Push", "react-native-fs"],

@@ -50,54 +50,62 @@ export const Experience = () => {
                   />
 
                   {/* Content Container */}
-                  <div className={`w-full md:w-1/2 pl-12 md:px-12 ${isEven ? 'md:pr-12 md:pl-0 md:text-right' : 'md:pl-12 md:ml-auto'}`}>
+                  <div className={`w-full md:w-1/2 pl-12 md:px-8 ${isEven ? 'md:pr-12 md:pl-0' : 'md:pl-12 md:ml-auto'}`}>
                     <motion.div
                       initial={{ opacity: 0, x: isEven ? -50 : 50, y: 20 }}
                       whileInView={{ opacity: 1, x: 0, y: 0 }}
                       viewport={{ once: true, margin: "-100px" }}
                       transition={{ duration: 0.6, delay: 0.3 }}
-                      className="glass-panel p-6 md:p-8 rounded-sm relative group hover:border-cyan-500/50 transition-colors"
+                      className="glass-panel p-6 md:p-8 rounded-sm relative group hover:border-cyan-500/50 transition-all shadow-[0_0_20px_rgba(0,0,0,0.4)]"
                     >
-                      <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30 transition-opacity">
+                      <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-25 transition-opacity">
                         <div className="text-6xl font-display font-bold text-cyan-500">
-                          {isEven ? '01' : '02'}
+                          0{index + 1}
                         </div>
                       </div>
 
-                      <div className="font-mono text-cyan-400 text-sm mb-2 font-bold tracking-widest">
-                        {exp.period}
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="font-mono text-cyan-400 text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+                          <span>// {exp.period}</span>
+                          {exp.period.includes('Present') && (
+                            <span className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-green-500/20 border border-green-500/40 text-green-400 text-[10px] rounded-full">
+                              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-ping"></span>
+                              ACTIVE NOW
+                            </span>
+                          )}
+                        </div>
                       </div>
                       
-                      <h3 className="text-2xl font-display font-bold text-white mb-1">
+                      <h3 className="text-2xl font-display font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
                         {exp.company}
                       </h3>
                       
-                      <div className="text-purple-400 font-mono text-sm mb-6 pb-4 border-b border-gray-800 inline-block">
+                      <div className="inline-block px-2.5 py-1 bg-purple-950/40 border border-purple-800/50 text-purple-300 font-mono text-xs mb-6 rounded-sm">
                         {exp.role}
                       </div>
                       
-                      <ul className="space-y-2 mb-6">
+                      <ul className="space-y-3 mb-6 text-left">
                         {exp.description.map((item, i) => (
-                          <li key={i} className={`text-gray-400 text-sm flex items-start gap-2 ${isEven ? 'md:justify-end md:flex-row-reverse' : ''}`}>
-                            <span className="text-cyan-500 mt-1 flex-shrink-0">
-                              {isEven ? '<' : '>'}
+                          <li key={i} className="text-gray-300 text-xs md:text-sm flex items-start gap-2.5 leading-relaxed">
+                            <span className="text-cyan-400 mt-1 flex-shrink-0 font-bold">
+                              ▹
                             </span>
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
 
-                      <div className={`flex flex-wrap gap-2 ${isEven ? 'md:justify-end' : ''}`}>
+                      <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-800/80">
                         {exp.skills.map(skill => (
-                          <span key={skill} className="px-2 py-1 bg-gray-900 border border-gray-700 text-gray-300 text-xs font-mono rounded-sm">
+                          <span key={skill} className="px-2.5 py-1 bg-gray-900/90 border border-gray-800 text-cyan-400/90 text-xs font-mono rounded-sm hover:border-cyan-500/40 transition-colors">
                             {skill}
                           </span>
                         ))}
                       </div>
                       
                       {/* Corner Accents */}
-                      <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-cyan-500/50"></div>
-                      <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-cyan-500/50"></div>
+                      <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-cyan-500/60"></div>
+                      <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-cyan-500/60"></div>
                     </motion.div>
                   </div>
                 </div>

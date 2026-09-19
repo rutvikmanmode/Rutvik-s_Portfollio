@@ -170,7 +170,10 @@ function getFallbackResponse(message: string): string {
   }
 
   if (msg.includes('experience') || msg.includes('work') || msg.includes('intern')) {
-    return `> Employment records:\n// ${experiences[0].company} — ${experiences[0].role} (${experiences[0].period})\n// ${experiences[1].company} — ${experiences[1].role} (${experiences[1].period})\n\n> Check the TIMELINE section for the full story.`;
+    const expLogs = experiences
+      .map((e) => `// ${e.company} — ${e.role} (${e.period})`)
+      .join('\n');
+    return `> Employment records:\n${expLogs}\n\n> Check the TIMELINE section for the full story.`;
   }
 
   if (msg.includes('education') || msg.includes('college') || msg.includes('degree')) {

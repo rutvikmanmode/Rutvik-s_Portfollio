@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/personalData';
-import { Terminal, Send, Code2, Briefcase, Mail } from 'lucide-react';
+import { Terminal, Send, Code2, Briefcase, Mail, Phone } from 'lucide-react';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -61,6 +61,18 @@ export const Contact = () => {
                     <div className="text-white font-medium">{personalInfo.email}</div>
                   </div>
                 </a>
+
+                {personalInfo.phone && (
+                  <a href={`tel:${personalInfo.phone}`} className="flex items-center gap-4 p-4 glass-panel border border-gray-800 hover:border-cyan-500/50 transition-colors group">
+                    <div className="p-2 bg-gray-900 group-hover:bg-cyan-500/20 text-gray-400 group-hover:text-cyan-400 transition-colors">
+                      <Phone size={20} />
+                    </div>
+                    <div>
+                      <div className="text-xs text-gray-500 font-mono">VOICE / DIRECT LINE</div>
+                      <div className="text-white font-medium">{personalInfo.phone}</div>
+                    </div>
+                  </a>
+                )}
 
                 <div className="flex gap-4">
                   <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 p-4 glass-panel border border-gray-800 hover:border-white/50 transition-colors group">

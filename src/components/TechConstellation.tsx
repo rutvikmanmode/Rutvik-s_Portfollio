@@ -5,20 +5,23 @@ import { Network } from 'lucide-react';
 
 // Pre-calculated node positions for a pseudo-random constellation look
 const nodePositions: Record<string, {x: number, y: number}> = {
-  // Frontend
+  // Frontend & Mobile
   "React.js": { x: 28, y: 22 },
   "React Native": { x: 42, y: 16 },
+  "Kotlin": { x: 50, y: 12 },
   "TypeScript": { x: 18, y: 38 },
   "JavaScript": { x: 34, y: 34 },
   "Tailwind CSS": { x: 14, y: 24 },
   "HTML5 Canvas": { x: 24, y: 12 },
   
   // Backend
-  "Node.js": { x: 72, y: 22 },
-  "Express.js": { x: 86, y: 18 },
+  "Spring Boot": { x: 80, y: 14 },
+  "Java": { x: 74, y: 26 },
+  "Node.js": { x: 68, y: 20 },
+  "Express.js": { x: 86, y: 22 },
   "REST APIs": { x: 76, y: 36 },
   "Passport.js": { x: 88, y: 32 },
-  "Cron Workers": { x: 68, y: 12 },
+  "Cron Workers": { x: 64, y: 12 },
   
   // Database
   "MongoDB": { x: 58, y: 68 },
