@@ -130,12 +130,12 @@ function renderProjectView(project: Project, index: number) {
 
 // Common Project Information Column Component
 const ProjectInfoSide = ({ project, index, accentColor = 'cyan' }: { project: Project; index: number; accentColor?: string }) => {
-  const accentClasses: Record<string, { tag: string; bullet: string; badge: string }> = {
-    cyan: { tag: 'text-cyan-400', bullet: 'text-cyan-400', badge: 'bg-cyan-950/40 border-cyan-900/60 text-cyan-400' },
-    purple: { tag: 'text-purple-400', bullet: 'text-purple-400', badge: 'bg-purple-950/40 border-purple-900/60 text-purple-400' },
-    amber: { tag: 'text-amber-400', bullet: 'text-amber-400', badge: 'bg-amber-950/40 border-amber-900/60 text-amber-400' },
-    emerald: { tag: 'text-emerald-400', bullet: 'text-emerald-400', badge: 'bg-emerald-950/40 border-emerald-900/60 text-emerald-400' },
-    rose: { tag: 'text-rose-400', bullet: 'text-rose-400', badge: 'bg-rose-950/40 border-rose-900/60 text-rose-400' },
+  const accentClasses: Record<string, { tag: string; bullet: string; badge: string; button: string }> = {
+    cyan: { tag: 'text-cyan-400', bullet: 'text-cyan-400', badge: 'bg-cyan-950/40 border-cyan-900/60 text-cyan-400', button: 'bg-cyan-400 text-black hover:bg-white hover:shadow-[0_0_20px_rgba(0,255,255,0.6)]' },
+    purple: { tag: 'text-purple-400', bullet: 'text-purple-400', badge: 'bg-purple-950/40 border-purple-900/60 text-purple-400', button: 'bg-purple-500 text-white hover:bg-white hover:text-black hover:shadow-[0_0_20px_rgba(168,85,247,0.6)]' },
+    amber: { tag: 'text-amber-400', bullet: 'text-amber-400', badge: 'bg-amber-950/40 border-amber-900/60 text-amber-400', button: 'bg-amber-400 text-black hover:bg-white hover:shadow-[0_0_20px_rgba(251,191,36,0.6)]' },
+    emerald: { tag: 'text-emerald-400', bullet: 'text-emerald-400', badge: 'bg-emerald-950/40 border-emerald-900/60 text-emerald-400', button: 'bg-emerald-400 text-black hover:bg-white hover:shadow-[0_0_20px_rgba(52,211,153,0.6)]' },
+    rose: { tag: 'text-rose-400', bullet: 'text-rose-400', badge: 'bg-rose-950/40 border-rose-900/60 text-rose-400', button: 'bg-rose-500 text-white hover:bg-white hover:text-black hover:shadow-[0_0_20px_rgba(244,63,94,0.6)]' },
   };
 
   const style = accentClasses[accentColor] || accentClasses.cyan;
@@ -203,7 +203,10 @@ const ProjectInfoSide = ({ project, index, accentColor = 'cyan' }: { project: Pr
             href={project.demoUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 px-6 py-3 bg-cyan-400 text-black font-display font-bold text-sm tracking-widest hover:bg-white hover:shadow-[0_0_20px_rgba(0,255,255,0.6)] transition-all"
+            className={clsx(
+              "flex items-center gap-2 px-6 py-3 font-display font-bold text-sm tracking-widest transition-all",
+              style.button
+            )}
           >
             <ExternalLink size={16} /> LIVE DEPLOYMENT
           </a>
@@ -810,9 +813,21 @@ const ProjectTaskAbomination = ({ project, index }: { project: Project; index: n
               <Gamepad2 size={16} className="animate-pulse" />
               <span>ARCADE_ENGINE // HTML5 CANVAS & WEB AUDIO</span>
             </div>
-            <span className="text-amber-400 font-bold flex items-center gap-1 text-[10px]">
-              <Flame size={12} /> 7-DAY STREAK: ACTIVE
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-amber-400 font-bold flex items-center gap-1 text-[10px]">
+                <Flame size={12} /> 7-DAY STREAK: ACTIVE
+              </span>
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-2.5 py-1 bg-rose-500/20 hover:bg-rose-500 text-rose-300 hover:text-white border border-rose-500/40 rounded text-[10px] font-bold transition-all shadow-[0_0_10px_rgba(244,63,94,0.2)]"
+                >
+                  <Play size={10} className="fill-current" /> PLAY GAME
+                </a>
+              )}
+            </div>
           </div>
 
           {/* Retro Arcade Screen */}
@@ -841,7 +856,7 @@ const ProjectTaskAbomination = ({ project, index }: { project: Project; index: n
             </div>
 
             {/* Canvas Simulation Screen */}
-            <div className="h-48 bg-[#020205] border border-gray-800 rounded relative overflow-hidden flex items-center justify-center p-4">
+            <div className="h-48 bg-[#020205] border border-gray-800 rounded relative overflow-hidden flex items-center justify-center p-4 group/canvas">
               <div className="absolute inset-0 grid grid-cols-6 grid-rows-4 border border-gray-900 opacity-20"></div>
 
               {activeGame === 'Zombie Rush' ? (
@@ -858,6 +873,20 @@ const ProjectTaskAbomination = ({ project, index }: { project: Project; index: n
                   <div className="font-mono text-xs text-gray-400 mt-1">Space to Jump // Shift to Slide // Speed Multiplier</div>
                   <div className="font-mono text-[10px] text-cyan-400 mt-2">DISTANCE ESCAPED: 1,420M</div>
                 </div>
+              )}
+
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 bg-black/75 backdrop-blur-[2px] opacity-0 group-hover/canvas:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2 z-20"
+                >
+                  <div className="px-4 py-2 bg-rose-500 text-white font-display font-bold text-xs tracking-wider rounded flex items-center gap-2 shadow-[0_0_20px_rgba(244,63,94,0.6)]">
+                    <Play size={14} className="fill-current" /> LAUNCH PLAYABLE ARCADE
+                  </div>
+                  <span className="font-mono text-[10px] text-gray-300">Opens in browser game portal</span>
+                </a>
               )}
             </div>
 

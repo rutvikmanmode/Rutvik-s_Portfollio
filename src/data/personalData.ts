@@ -211,6 +211,7 @@ export const projects: Project[] = [
     ],
     techStack: ["React 19.2", "Vite 7.3", "Tailwind CSS v4.2", "Motion v12", "HTML5 Canvas", "Web Audio API", "Node.js 20+", "Express 5.2", "MongoDB Mongoose 9"],
     isPrivateRepo: true,
+    demoUrl: "https://task-abomination-game-web-app-e1zq.vercel.app/game",
     metrics: [
       { label: "ARCADE ENGINE", value: "CANVAS + AUDIO" },
       { label: "MINI-GAMES", value: "ZOMBIE RUSH / RUN" }
