@@ -67,11 +67,11 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.1 }}
-              className="flex flex-col sm:flex-row gap-4 mt-4"
+              className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-4 mt-4"
             >
               <button 
                 onClick={scrollToProjects}
-                className="px-8 py-4 bg-transparent border-2 border-cyan-500 text-cyan-400 font-display font-bold tracking-widest hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300 relative overflow-hidden group"
+                className="px-6 sm:px-8 py-3.5 sm:py-4 bg-transparent border-2 border-cyan-500 text-cyan-400 font-display font-bold tracking-widest hover:bg-cyan-500/10 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300 relative overflow-hidden group whitespace-nowrap text-center"
               >
                 <span className="relative z-10">[ EXPLORE MY WORK ]</span>
                 <div className="absolute inset-0 bg-cyan-500/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300"></div>
@@ -79,12 +79,12 @@ export const Hero = () => {
               
               <button 
                 onClick={scrollToContact}
-                className="px-8 py-4 bg-white/5 border border-white/10 text-white font-display font-bold tracking-widest hover:bg-white/10 transition-all duration-300"
+                className="px-6 sm:px-8 py-3.5 sm:py-4 bg-white/5 border border-white/10 text-white font-display font-bold tracking-widest hover:bg-white/10 transition-all duration-300 whitespace-nowrap text-center"
               >
                 [ CONNECT ]
               </button>
 
-              <div className="flex items-center gap-4 ml-0 sm:ml-4 mt-4 sm:mt-0">
+              <div className="flex items-center gap-4 ml-0 sm:ml-2 mt-2 sm:mt-0">
                 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-900 border border-gray-800 text-gray-400 hover:text-white hover:border-cyan-500 transition-colors">
                   <Code2 size={20} />
                 </a>
