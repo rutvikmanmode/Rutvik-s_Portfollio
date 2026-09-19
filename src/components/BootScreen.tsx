@@ -105,7 +105,7 @@ export const BootScreen = ({ onComplete }: BootScreenProps) => {
                 <h2 className="text-3xl md:text-5xl font-display font-bold text-green-400 tracking-widest mb-4 neon-text-cyan glitch-text" data-text="ACCESS GRANTED">
                   ACCESS GRANTED
                 </h2>
-                <p className="text-xl text-gray-300">WELCOME, RUTVIK.</p>
+                <p className="text-xl text-gray-300">WELCOME TO RUTVIK'S PORTFOLIO</p>
               </motion.div>
             )}
           </div>
